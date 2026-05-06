@@ -117,14 +117,14 @@ export default function App() {
           }}
         >
           {/* 底图背景层 */}
-          <div
-            className="absolute inset-0 bg-cover bg-left"
-            style={{
-              backgroundImage: 'url(/images/vintage_map.png)',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-          />
+        <div
+          className="absolute inset-0 bg-cover bg-left"
+          style={{
+            backgroundImage: `url('${import.meta.env.BASE_URL}images/vintage_map.png')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        />
 
           {/* 区域半透明色带 */}
           {regionBands.map((r) => (
