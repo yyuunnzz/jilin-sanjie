@@ -4,6 +4,7 @@ import type { MapNode } from '@/data/mapNodes';
 import InfoPanel from '@/components/InfoPanel';
 import VRView from '@/components/VRView';
 import { ScrollText, ZoomIn, ZoomOut, RotateCcw, ChevronLeft, ChevronRight, MapPin, Glasses, Eye } from 'lucide-react';
+import vintageMap from './assets/images/vintage_map.png';
 
 export default function App() {
   const [selectedNode, setSelectedNode] = useState<MapNode | null>(null);
@@ -120,7 +121,7 @@ export default function App() {
         <div
           className="absolute inset-0 bg-cover bg-left"
           style={{
-            backgroundImage: `url('${import.meta.env.BASE_URL}images/vintage_map.png')`,
+            backgroundImage: `url(${vintageMap})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
